@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SummerNote Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+</head>
+<body>
+    <form action="" method="post" enctype="multipart/form-data">
+        <!-- Your HTML Body Goes Here -->
+        <div>
+            <label for="body">Body</label> <br>
+            <textarea name="body" id="body" rows="10"></textarea>
+        </div>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('textarea#body').summernote({
+                /** Default place holder for the WYSIWYG editor */
+                placeholder: 'Enter your body',
+
+                /** Height Settings */
+                height: '300px',
+
+                /** Toolbar settings */
+                // toolbar: [
+                //     ['style', ['bold', 'italic', 'underline', 'clear']],
+                //     ['font', ['strikethrough', 'superscript', 'subscript']],
+                //     ['fontsize', ['fontsize']],
+                //     ['color', ['color']],
+                //     ['para', ['ul', 'ol', 'paragraph']],
+                //     ['height', ['height']]
+                // ]
+            });
+        });
+    </script>
+</body>
+</html>
